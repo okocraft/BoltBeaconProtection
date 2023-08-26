@@ -1,0 +1,7 @@
+name: "BoltBeaconProtection"
+main: net.okocraft.boltbeaconprotection.BoltBeaconProtectionPlugin
+version: ${project.version}
+author: "Siroshun09"
+api-version: "1.13"
+folia-supported: true
+depends: [ "bolt" ]
