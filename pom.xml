@@ -6,7 +6,7 @@
 
     <groupId>net.okocraft.boltbeaconprotection</groupId>
     <artifactId>boltbeaconprotection</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>BoltBeaconProtection</name>
     <url>https://github.com/okocraft/BoltBeaconProtection</url>
