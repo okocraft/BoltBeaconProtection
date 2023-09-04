@@ -63,7 +63,7 @@
         <dependency>
             <groupId>org.popcraft</groupId>
             <artifactId>bolt-bukkit</artifactId>
-            <version>1.0.513</version>
+            <version>1.0.514</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
