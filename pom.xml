@@ -69,7 +69,7 @@
         <dependency>
             <groupId>org.popcraft</groupId>
             <artifactId>bolt-common</artifactId>
-            <version>1.0.579</version>
+            <version>1.0.580</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
