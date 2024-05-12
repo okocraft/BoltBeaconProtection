@@ -120,6 +120,7 @@
                         </manifest>
                         <manifestEntries>
                             <Automatic-Module-Name>${project.groupId}</Automatic-Module-Name>
+                            <paperweight-mappings-namespace>mojang</paperweight-mappings-namespace>
                         </manifestEntries>
                     </archive>
                 </configuration>
