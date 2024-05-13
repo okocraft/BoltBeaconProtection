@@ -8,7 +8,7 @@ A Paper/Folia plugin that automatically protects the ore blocks at the base of t
 
 ## Requirements
 
-- Java 17+
+- Java 21+
 - Paper / Folia
 - [Bolt](https://github.com/pop4959/Bolt)
 
