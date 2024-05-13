@@ -28,7 +28,7 @@ public class BeaconListener implements Listener {
         var block = event.getBeacon();
         var player = event.getPlayer();
 
-        if (block == null || !(block.getState() instanceof Beacon beacon) || !player.hasPermission("boltbeaconprotection.autoprotect")) {
+        if (!(block.getState() instanceof Beacon beacon) || !player.hasPermission("boltbeaconprotection.autoprotect")) {
             return;
         }
 
