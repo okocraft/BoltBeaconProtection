@@ -17,8 +17,8 @@ A Paper/Folia plugin that automatically protects the ore blocks at the base of t
 - Give the permission node `boltbeaconprotection.autoprotect` to the players
 - Place a beacon and ore blocks, then select effects of the beacon 
 
-## ライセンス / LICENSE
+## LICENSE
 
 This project is under the GPL-3.0. Please see [LICENSE](LICENSE) for more info.
 
-Copyright © 2023-2024, OKOCRAFT and Siroshun09
+Copyright © 2023-2025, OKOCRAFT and Siroshun09
