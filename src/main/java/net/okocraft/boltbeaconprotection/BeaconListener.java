@@ -33,7 +33,7 @@ public class BeaconListener implements Listener {
             return;
         }
 
-        int protectedBlocks = protectBase(beacon, player.getUniqueId());
+        int protectedBlocks = this.protectBase(beacon, player.getUniqueId());
 
         if (protectedBlocks < 1) {
             return;
@@ -73,11 +73,11 @@ public class BeaconListener implements Listener {
                 for (int l1 = z - i1; l1 <= z + i1; ++l1) {
                     var block = world.getBlockAt(k1, j1, l1);
 
-                    if (!Tag.BEACON_BASE_BLOCKS.isTagged(block.getType()) || bolt.isProtected(block)) {
+                    if (!Tag.BEACON_BASE_BLOCKS.isTagged(block.getType()) || this.bolt.isProtected(block)) {
                         continue;
                     }
 
-                    bolt.saveProtection(bolt.createProtection(block, uuid, bolt.getDefaultProtectionType()));
+                    this.bolt.saveProtection(this.bolt.createProtection(block, uuid, this.bolt.getDefaultProtectionType()));
                     count++;
                 }
             }

@@ -10,14 +10,14 @@ public class BoltBeaconProtectionPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        beaconListener = new BeaconListener(JavaPlugin.getPlugin(BoltPlugin.class));
-        getServer().getPluginManager().registerEvents(beaconListener, this);
+        this.beaconListener = new BeaconListener(JavaPlugin.getPlugin(BoltPlugin.class));
+        this.getServer().getPluginManager().registerEvents(this.beaconListener, this);
     }
 
     @Override
     public void onDisable() {
-        if (beaconListener != null) {
-            HandlerList.unregisterAll(beaconListener);
+        if (this.beaconListener != null) {
+            HandlerList.unregisterAll(this.beaconListener);
         }
     }
 }
