@@ -9,22 +9,23 @@ import org.bukkit.block.Beacon;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.jetbrains.annotations.NotNull;
+import org.jspecify.annotations.NullMarked;
 import org.popcraft.bolt.BoltPlugin;
 
 import java.util.Locale;
 import java.util.UUID;
 
+@NullMarked
 public class BeaconListener implements Listener {
 
     private final BoltPlugin bolt;
 
-    public BeaconListener(@NotNull BoltPlugin bolt) {
+    public BeaconListener(BoltPlugin bolt) {
         this.bolt = bolt;
     }
 
     @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGHEST)
-    public void onChangeBeaconEffect(@NotNull PlayerChangeBeaconEffectEvent event) {
+    public void onChangeBeaconEffect(PlayerChangeBeaconEffectEvent event) {
         var block = event.getBeacon();
         var player = event.getPlayer();
 
@@ -53,7 +54,7 @@ public class BeaconListener implements Listener {
     }
 
     // Copied from BeaconBlockEntity#updateBase
-    private int protectBase(@NotNull Beacon beacon, @NotNull UUID uuid) {
+    private int protectBase(Beacon beacon, UUID uuid) {
         World world = beacon.getWorld();
         int x = beacon.getX();
         int y = beacon.getY();
