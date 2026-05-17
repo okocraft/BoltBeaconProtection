@@ -50,7 +50,7 @@ public class BeaconListener implements Listener {
                     .append(Component.text(" of the beacon.", NamedTextColor.GRAY));
         }
 
-        player.sendMessage(message.build());
+        player.sendMessage(message);
     }
 
     // Copied from BeaconBlockEntity#updateBase
